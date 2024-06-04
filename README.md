@@ -22,7 +22,7 @@ Depending on the arguments of **logparsher.sh** the following functions are perf
 - **./logparser.sh &lt;filename&gt; --datum &lt;Date&gt;:** Displays all records of the file given as an argument that were made in the month that correspond to the month given as an argument to --datum regardless of the year. The date argument can be on of the alphanumeric values Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov and Dec.
 ___
 ### Function Integral Calculation Using Linux Processes
-
+The file **initial.c** contains code for the calculation of the integral of the function f(x) = ln(x)*sqrt(x)
 
 ___
 ### Processes Time Scheduler
