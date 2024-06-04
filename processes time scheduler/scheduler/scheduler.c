@@ -56,7 +56,6 @@ void RR();
 void PRIO();
 
 
-
 struct processes_queue queue;
 struct processes_queue terminated_processes;
 unsigned int quantum;
