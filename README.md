@@ -1,9 +1,9 @@
 # OS Programming Project
 A project about programming in Linux OS using C and bash shell code.
-
+  
 The project has 3 parts:
 - Shell scripting in bash shell
-- Code optimizations using processes
+- Function integral calculation using Linux processes
 - Processes time scheduler for Linux
 ___
 ### Shell Scripting
@@ -13,9 +13,16 @@ The **logparsher.sh** file contains bash code for the management of **access.log
 - ::1 - - [19/Apr/2022:10:22:23 +0300] "GET /phpmyadmin/themes/pmahomme/img/b_bookmark.png HTTP/1.1" 200 637 
 
 Depending on the arguments of logparsher.sh the following functions are performed:
-- ./logparser.sh &lt;filename&gt;
+- ./logparser.sh &lt;filename&gt;:
+- ./logparser.sh &lt;filename&gt; --usrid:
+- ./logparser.sh &lt;filename&gt; --usrid &lt;user_id&gt;:
+- ./logparser.sh &lt;filename&gt; -method &lt;method_name&gt;:
+- ./logparser.sh &lt;filename&gt; --servprot &lt;Network_Protocol&gt;:
+- ./logparser.sh &lt;filename&gt; --browsers:
+- ./logparser.sh &lt;filename&gt; --datum &lt;Date&gt;:
 ___
-### Processes
+### Function Integral Calculation Using Linux Processes
+
 
 ___
 ### Processes Time Scheduler
