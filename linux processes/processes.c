@@ -1,6 +1,3 @@
-/* Konstantinos Pretsios, 1084666 */
-/* Periklis Labaditis, 1072502 */
-
 #include <stdio.h>
 #include <math.h>
 #include <sys/time.h>
