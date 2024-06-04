@@ -60,8 +60,6 @@ function count_browsers {
 }
 
 case $* in
-	"") echo 1084666
-	    ;;
 	*".log") sed 'p' $1
 	         ;;
 	*".log --usrid") mining_usernames $1
