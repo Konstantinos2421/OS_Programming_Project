@@ -67,40 +67,40 @@ case $* in
 	*".log --usrid"*) awk -v user_id=$3 '{ if($0 ~ user_id) print $0 }' $1
 			  		  ;;
 	*".log -method"*) case $# in
-						3) case $3 in
-							GET) awk '/GET/ {print}' $1
-					     	;;
-							POST) awk '/POST/ {print}' $1
-					      	;;
-						*) echo "Wrong Method Name"
-				    	esac
-				    	;;
-					*) echo "Wrong Method Name"
-			    	esac
-			    	;;
+				3) case $3 in
+				   GET) awk '/GET/ {print}' $1
+				   ;;
+				   POST) awk '/POST/ {print}' $1
+				   ;;
+				*) echo "Wrong Method Name"
+				esac
+				;;
+			*) echo "Wrong Method Name"
+			esac
+			;;
 	*".log --servprot"*) case $# in
-			     			3) case $3 in
-			 	  				IPv4) awk '/127.0.0.1/ {print}' $1
-			 	  	      		;;
-			 	  				IPv6) awk '/::1/ {print}' $1
-			 	  	      		;;
-			 	  	  			*) echo "Wrong Network Protocol"
-				      			esac
-				      			;;
-			     	  *) echo "Wrong Network Protocol"
-	                  	 esac
-	                     ;;
+			     	3) case $3 in
+			 		IPv4) awk '/127.0.0.1/ {print}' $1
+			 	  	;;
+			 	  	IPv6) awk '/::1/ {print}' $1
+			 	  	;;
+			 	*) echo "Wrong Network Protocol"
+				   esac
+				   ;;
+			   *) echo "Wrong Network Protocol"
+	                      esac
+	                      ;;
 	*".log --browsers") count_browsers $1
-			    		;;
+			    ;;
 	*".log --datum"*) case $# in
-							3) case $3 in
-								Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) awk -v month=$3 '{if($0 ~ month) print $0}' $1
-								;;
-							*) echo "Wrong Date"
-				   			   esac
-				   			   ;;
-				   *) echo "Wrong Date"
-			  		  esac
-			  		  ;;
+				3) case $3 in
+					Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) awk -v month=$3 '{if($0 ~ month) print $0}' $1
+					;;
+				*) echo "Wrong Date"
+				   esac
+				   ;;
+			*) echo "Wrong Date"
+			   esac
+			   ;;
 	*) echo "Wrong File Argument"
 esac
