@@ -25,7 +25,7 @@ Depending on the arguments of **logparsher.sh** the following functions are perf
 ___
 ### Function Integral Calculation Using Linux Processes
 The file **initial.c** contains code to calculate the integral of the function:
-*f(x) = ln(x)*sqrt(x)*
+f(x) = ln(x)*sqrt(x)
   
 In the **processes.c** file there is an implementation of calculating the same integral by using linux processes with message exchange.
 ___
