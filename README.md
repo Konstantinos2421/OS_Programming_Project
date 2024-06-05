@@ -4,7 +4,7 @@ A project about programming in Linux OS using C and bash shell code.
 The project has 3 parts:
 - Shell scripting in bash shell
 - Function integral calculation using Linux processes
-- Processes time scheduler for Linux
+- Processes time scheduler for Linux systems
 ___
 ### Shell Scripting
 The **logparsher.sh** file contains bash code for the management of **access.log** file, which is a Linux system file. Each of its records may have one of the following formats:
@@ -28,3 +28,12 @@ The file **initial.c** contains code to calculate the integral of the function:
 In the **processes.c** file there is an implementation of calculating the same integral by using linux processes with message exchange.
 ___
 ### Processes Time Scheduler
+In this part of the project the goal is to implement a scheduling environment in a Linux operating system. Specifically, a scheduler is implemented which takes as input the applications that are to be executed, reads a file with their names, enters them into an appropriate data structure(list) and then routes them by applying one of the following policies:
+- FCFS(First Come First Served)
+- SJF(Shortest Job First)
+- RR(Round Robin)
+- PRIO(Priority Scheduling)
+  
+There are two folders:
+- work:
+- scheduler:
