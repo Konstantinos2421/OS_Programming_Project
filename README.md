@@ -43,6 +43,7 @@ There are two folders:
 **Execution Instructions:**  
 After scheduler.c is compiled, it can be executed as follows:  
 ***./scheduler &lt;policy&gt; [&lt;quantum&gt;] &lt;input_filename&gt;***  
+  
 where:  
 - scheduler: The executable of scheduler.c.
 - policy: The routing policy with which the processes will run. Possible values ​​are FCFS, SJF, RR and PRIO.
