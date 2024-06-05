@@ -38,7 +38,7 @@ In this part of the project the goal is to implement a scheduling environment in
   
 There are two folders for this part of the project:
 - **work:** This folder contains the **work.c** file in which some calculations are performed in order to create an executable with a delay. Also in the folder there is a makefile with which seven executables of the work.c with different delays are created. The executables created by this makefile are used for the time scheduler testing.
-- **scheduler:** It contains the **scheduler.c** file which implements the time scheduler for the processes. It also contains the files homogeneous.txt, mixed.txt and reverse.txt which is used to define the paths of the executables of the work.c that are to be routed by scheduler.
+- **scheduler:** It contains the **scheduler.c** file which implements the time scheduler for the processes. It also contains the files homogeneous.txt, mixed.txt and reverse.txt which is used to define the paths of the executables of the work.c that are to be routed by the scheduler.
 
 **Execution Instructions:**  
 After scheduler.c is compiled, it can be executed as follows:  
