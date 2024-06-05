@@ -41,9 +41,9 @@ There are two folders:
 - scheduler: It contains the **scheduler.c** file which implements the time scheduler for the processes. It also contains the files homogeneous.txt, mixed.txt and reverse.txt which deffines the paths of the executables of the work.c that are to be routed by scheduler.
 
 **Execution Instructions:**
-After scheduler.c is compiled, it can be executed as follows:
-./scheduler &lt;policy&gt; [&lt;quantum&gt;] &lt;input_filename&gt;
-where:
+After scheduler.c is compiled, it can be executed as follows:  
+./scheduler &lt;policy&gt; [&lt;quantum&gt;] &lt;input_filename&gt;  
+where:  
 - scheduler: The executable of scheduler.c.
 - policy: The routing policy with which the processes will run. Possible values ​​are FCFS, SJF, RR and PRIO.
 - quantum: The routing quantum in msec. Only required when a routing policy is set to RR or PRIO.
