@@ -5,6 +5,8 @@ The project has 3 parts:
 - Shell scripting in bash shell
 - Function integral calculation using Linux processes
 - Processes time scheduler for Linux systems
+  
+***NOTE:*** The code of all parts can be executed only in Linux systems.
 ___
 ### Shell Scripting
 The **logparsher.sh** file contains bash code for the management of **access.log** file, which is a Linux system file. Each of its records may have one of the following formats:
@@ -29,11 +31,21 @@ In the **processes.c** file there is an implementation of calculating the same i
 ___
 ### Processes Time Scheduler
 In this part of the project the goal is to implement a scheduling environment in a Linux operating system. Specifically, a scheduler is implemented which takes as input the applications that are to be executed, reads a file with their names, enters them into an appropriate data structure(list) and then routes them by applying one of the following policies:
-- FCFS(First Come First Served)
-- SJF(Shortest Job First)
-- RR(Round Robin)
-- PRIO(Priority Scheduling)
+- **FCFS(First Come First Served)**
+- **SJF(Shortest Job First)**
+- **RR(Round Robin)**
+- **PRIO(Priority Scheduling)**
   
 There are two folders:
-- work:
-- scheduler:
+- work: This folder contains the **work.c** file in which some calculations are performed in order to create an executable with a delay. Also in the folder there is a makefile with which seven executables of the work.c with different delays are created.
+- scheduler: It contains the **scheduler.c** file which implements the time scheduler for the processes. It also contains the files homogeneous.txt, mixed.txt and reverse.txt which deffines the paths of the executables of the work.c that are to be routed by scheduler.
+
+**Execution Instructions:**
+After scheduler.c is compiled, it can be executed as follows:
+./scheduler &lt;policy&gt; [&lt;quantum&gt;] &lt;input_filename&gt;
+where:
+- scheduler: The executable of scheduler.c.
+- policy: The routing policy with which the processes will run. Possible values ​​are FCFS, SJF, RR and PRIO.
+- quantum: The routing quantum in msec. Only required when a routing policy is set to RR or PRIO.
+- input_filename: The name of the file that contains the workload to run through scheduler. Each line of the file contains the name of a process's executable and a number
+which will state the required execution time or his priority.
