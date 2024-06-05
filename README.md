@@ -30,7 +30,7 @@ f(x) = ln(x)*sqrt(x)
 In the **processes.c** file there is an implementation of calculating the same integral by using linux processes with message exchange.
 ___
 ### Processes Time Scheduler
-In this part of the project the goal is to implement a scheduling environment in a Linux operating system. Specifically, a scheduler is implemented which takes as input the applications that are to be executed, reads a file with their names, enters them into an appropriate data structure(list) and then routes them by applying one of the following policies:
+In this part of the project the goal is to implement a scheduling environment in a Linux operating system. Specifically, a scheduler is implemented which takes as input the executables that are to be executed, reads a file with their names, enters them into an appropriate data structure(list) and then routes them by applying one of the following policies:
 - **FCFS(First Come First Served)**
 - **SJF(Shortest Job First)**
 - **RR(Round Robin)**
