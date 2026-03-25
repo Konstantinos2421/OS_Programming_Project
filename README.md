@@ -1,5 +1,5 @@
 # OS Programming Project
-A project about programming in Linux OS using C and bash shell code.
+Linux System Programming using C and Bash Scripting.
   
 The project has 3 parts:
 - Shell scripting in bash shell
